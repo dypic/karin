@@ -1,4 +1,12 @@
 /* sub common  */
+.mo-img {
+  display: none;
+}
+
+.sub-section {
+  padding: 120px 0;
+}
+
 .sub-visual {
   height: 100vh;
   position: relative;
@@ -7,20 +15,113 @@
 .sub-visual-txt {
   position: absolute;
   width: 100%;
-  top: 60%;
+  top: 55%;
   transform: translateY(-50%);
   color: var(--color-white);
 }
 .sub-visual-add {
-  letter-spacing: 1.5;
+  letter-spacing: 5px;
+  font-weight: 500;
 }
 .sub-visual-txt h2 {
+  padding: 30px 0 35px;
   line-height: 1.4;
+}
+.sub-visual-desc {
+  line-height: 1.9;
+}
+
+.sub-info-sec {
+  padding: 160px 0;
+}
+.sub-info-logo {
+  max-width: 180px;
+}
+.sub-info-txt h2 {
+  padding: 45px 0 30px;
 }
 
 
+.sub-column-2 {
+  padding-bottom: 60px;
+}
+.sub-column-2-txt {
+  max-width: 600px;
+}
+.sub-column-2-txt.txt-left {
+  padding-right: 40px;
+  margin: 0 0 0 auto;
+}
+.sub-column-2-txt.txt-right {
+  padding-left: 40px;
+}
+.sub-column-2-txt h2 {
+  padding-bottom: 35px;
+}
+.sub-column-2-txt p {
+  letter-spacing: 1.7;
+  color: var(--color-gray1);
+}
+.sub-column-2-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.sub-visual.antiaging-bg {
+/* icon layout  */
+.sub-column-icon .sub-icon-list {
+  width: 100%;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 35px auto;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sub-column-icon .sub-icon-list img {
+  max-width: 60px;
+  margin: 0 auto 10px;
+}
+.sub-column-icon .sub-icon-list p {
+  line-height: 1.2;
+  padding: 0 10px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.sub-column-icon .col-md-3 {
+  position: relative;
+}
+.sub-column-icon .col-md-3:not(:last-child):after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 991px) {
+  .mo-img {
+    display: block;
+  }
+  .pc-img {
+    display: none;
+  }
+}
+
+/* antiaging page  */
+.antiaging-bg {
   background: url("../../assets/images/anti-visual.jpg") no-repeat center;
+  background-size: cover;
+}
+.antiaging-info-bg {
+  background: url("../../assets/images/anti-info-bg.jpg") no-repeat center;
   background-size: cover;
 }

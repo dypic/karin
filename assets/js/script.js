@@ -37,7 +37,13 @@ $( document ).ready( function() {
     var jbOffset = $( '.header' ).offset();
   
     $( window ).scroll( function() {
-      if ( $( document ).scrollTop() > jbOffset.top ) {
+    //   if ( $( document ).scrollTop() > jbOffset.top ) {
+    //     $( '.header' ).addClass( 'scroll' );
+    //   }
+    //   else {
+    //     $( '.header' ).removeClass( 'scroll' );
+    //   }
+      if ( $( document ).scrollTop() > 0 ) {
         $( '.header' ).addClass( 'scroll' );
       }
       else {
