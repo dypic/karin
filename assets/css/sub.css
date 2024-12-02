@@ -1,0 +1,26 @@
+/* sub common  */
+.sub-visual {
+  height: 100vh;
+  position: relative;
+}
+
+.sub-visual-txt {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  transform: translateY(-50%);
+  color: var(--color-white);
+}
+.sub-visual-add {
+  letter-spacing: 1.5;
+}
+.sub-visual-txt h2 {
+  line-height: 1.4;
+}
+
+
+
+.sub-visual.antiaging-bg {
+  background: url("../../assets/images/anti-visual.jpg") no-repeat center;
+  background-size: cover;
+}

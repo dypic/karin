@@ -5,7 +5,8 @@
     /* color  */
     --color-primary: #af9981;
     --color-black: #000;
-    --color-gray1: #666;
+    /* --color-gray1: #666; */
+    --color-gold: #d8bf82; 
     --color-white: #fff; 
 }
 
@@ -86,7 +87,7 @@ input[type=radio].blind:focus-visible + label {
   margin: 0 auto;
   padding: 0 32px;
 }
-.main-title {
+/* .main-title {
     font-size: 50px;
     font-weight: 700;
 }
@@ -97,6 +98,25 @@ input[type=radio].blind:focus-visible + label {
 }
 .desc {
   font-size: 20px;
+} */
+
+.font-50 {
+    font-size: 50px;
+}
+.font-48 {
+    font-size: 48px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.color-gold {
+    color: var(--color-gold);
 }
 
 
