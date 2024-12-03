@@ -114,9 +114,9 @@
 .sec_spacial .cont .slick-slide{opacity:0.15;transition:all 1s;}
 .sec_spacial .cont .slick-slide.slick-active{opacity:1;}
 .sec_spacial .cont .inner{padding:0 15px;display:flex;flex-direction:row-reverse;justify-content:space-between; gap: 30px;}
-.sec_spacial .cont .txt dt{margin-left:-10px;padding-bottom:50px;font-size:145px;font-style:italic;font-weight:700;font-family:'MaruBuri', serif;color:#bba995;opacity:0.2;}
-.sec_spacial .cont .txt dd h3{font-size:2em;font-weight:500;font-family:'MaruBuri', serif;}
-.sec_spacial .cont .txt dd p{padding-top:34px;line-height:160%;font-weight:300;}
+.sec_spacial .cont .txt dt{margin-left:-10px;font-size:100px;font-style:italic;font-weight:700;font-family:'MaruBuri', serif;color:#bba995;opacity:0.2;}
+.sec_spacial .cont .txt dd h3{font-size:30px;font-weight:500;font-family:'MaruBuri', serif;}
+.sec_spacial .cont .txt dd p{padding-top:20px;line-height:1.4;font-weight:300;}
 .sec_spacial .imgmo{display:none;}
 
 .sec_spacial .navi{position:absolute;bottom:0;left:30px;width:140px; height:25px; transition:.5s linear;}
