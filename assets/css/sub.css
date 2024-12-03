@@ -237,3 +237,8 @@
   background-color: #f6f3ef;
 }
 
+/* special program  */
+.special-bg {
+  background: url("../../assets/images/special-visual.jpg") no-repeat center;
+  background-size: cover;
+}
