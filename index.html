@@ -52,10 +52,10 @@
           <a href="/antiaging.html">KARIN’S SIGNATURE ANTIAGING</a>
         </li>
         <li class=" ">
-          <a href="">KARIN’S TEXTURE</a>
+          <a href="/texture.html">KARIN’S TEXTURE</a>
         </li>
         <li class=" ">
-          <a href="">KARIN’S WHITENING</a>
+          <a href="/whitening.html">KARIN’S WHITENING</a>
         </li>
         <li class=" ">
           <a href="/special-program.html">KARIN’s SPECIAL PROGRAM</a>
@@ -107,7 +107,7 @@
           </div>
         </li>
         <li class="">
-          <a href="" target="">KARIN’S TEXTURE </a>
+          <a href="/texture.html" target="">KARIN’S TEXTURE </a>
           <div>
             <ul class="depth2">
     
@@ -115,7 +115,7 @@
           </div>
         </li>
         <li class="">
-          <a href="" target="">KARIN’S WHITENING </a>
+          <a href="/whitening.html" target="">KARIN’S WHITENING </a>
           <div>
             <ul class="depth2">
     
@@ -157,8 +157,11 @@
     </div>
     <div class="txt">
       <em>KARIN DERMATOLOGY</em>
-      <h2><span class="a1">A Private Anti-Aging Clinic <br class="monly"> That Turns Back Time</span><span class="a2">Welcome to Karin Clinic.</span></h2>
-      <p>At Karin Clinic, we provide personalized treatments for each client, <br />ensuring the highest quality medical care.</p>
+      <h2 data-aos="fade-up" data-aos-duration="1000">
+        <span class="a1">A Private Anti-Aging Clinic That Turns Back Time</span>
+        <span class="a2">Welcome to Karin Clinic.</span>
+      </h2>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">At Karin Clinic, we provide personalized treatments for each client, <br />ensuring the highest quality medical care.</p>
     </div>
   </section>
 
@@ -437,13 +440,12 @@
   <script src="./assets/js/jquery-3.2.1.slim.min.js"></script>
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="./assets/js/script.js"></script>
   <script>
     AOS.init({
         once: true,
       });
+
     $(function () {
       // main visual 
         $('.main_visual .pic').slick({
@@ -500,51 +502,6 @@
           dots: false
         });
     })
-
-    gsap.registerPlugin(ScrollTrigger);
-      $(function () {
-        /*
-        gsap.to('.main_con .tt h3', {
-            scrollTrigger:{
-                trigger: '.main_con',
-                start: "0% 30%",
-                end: "100% 80%",
-                scrub: 1, 
-                markers: true, 
-            }
-        })
-        */
-
-        const titlebox = document.querySelectorAll(".main_con .txt h3");
-        titlebox.forEach((titlebox, index) => {
-          ScrollTrigger.create({
-            trigger: titlebox,
-            id: index + 1,
-            start: 'top 70%',
-            onEnter: () => titlebox.classList.add('on'),
-            onEnterBack: () => titlebox.classList.add('on'),
-            onLeaveBack: () => titlebox.classList.remove('on'),
-            onLeave: () => titlebox.classList.remove('on'),
-            //markers: true, 
-          });
-        });
-
-        const anipic = document.querySelectorAll(".anipic");
-        anipic.forEach((anipic, index) => {
-          ScrollTrigger.create({
-            trigger: anipic,
-            id: index + 1,
-            start: 'top 70%',
-            onEnter: () => anipic.classList.add('on'),
-            onEnterBack: () => anipic.classList.add('on'),
-            onLeaveBack: () => anipic.classList.remove('on'),
-            onLeave: () => anipic.classList.remove('on'),
-            //markers: true, 
-          });
-        });
-
-
-      });
   </script>
 </body>
 </html>
