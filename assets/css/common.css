@@ -1,5 +1,6 @@
 @import url('https://webfontworld.github.io/naver/MaruBuri.css');
 @import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     /* color  */
@@ -110,8 +111,9 @@ input[type=radio].blind:focus-visible + label {
     font-weight: 500;
 }
 .maruburi {
-    font-family: 'MaruBuri';
-    transform: skew(-0.1deg);
+    /* font-family: 'MaruBuri';
+    transform: skew(-0.1deg); */
+    font-family: "Noto Serif", serif;
 }
 .color-primary {
     color: var(--color-primary);

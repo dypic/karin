@@ -55,10 +55,10 @@
   color:#d8bf82;
   font-weight:600;
   font-style: normal;
-  font-family:'MaruBuri', serif;
+  font-family:"Noto Serif", serif;
 }
-.main_visual .txt h2 span{font-size:48px;font-weight:100;line-height:140%;font-family:'MaruBuri', serif;color:#fff;}
-.main_visual .txt h2 b{font-size:48px;font-weight:500;font-family:'MaruBuri', serif;color:#fff;}
+.main_visual .txt h2 span{font-size:48px;font-weight:100;line-height:140%;font-family:"Noto Serif", serif;color:#fff;}
+.main_visual .txt h2 b{font-size:48px;font-weight:500;font-family:"Noto Serif", serif;color:#fff;}
 .main_visual .txt h2 br{display:none;}
 .main_visual .txt h2 span.a1{display:block;animation:fade_top 1s 0s forwards ease-in-out;opacity:0;}
 .main_visual .txt h2 span.a2{display:block;animation:fade_top 1s 0.4s forwards ease-in-out;opacity:0;}
@@ -114,8 +114,8 @@
 .sec_spacial .cont .slick-slide{opacity:0.15;transition:all 1s;}
 .sec_spacial .cont .slick-slide.slick-active{opacity:1;}
 .sec_spacial .cont .inner{padding:0 15px;display:flex;flex-direction:row-reverse;justify-content:space-between; gap: 30px;}
-.sec_spacial .cont .txt dt{margin-left:-10px;font-size:100px;font-style:italic;font-weight:700;font-family:'MaruBuri', serif;color:#bba995;opacity:0.2;}
-.sec_spacial .cont .txt dd h3{font-size:30px;font-weight:500;font-family:'MaruBuri', serif;}
+.sec_spacial .cont .txt dt{margin-left:-10px;font-size:100px;font-style:italic;font-weight:700;font-family:"Noto Serif", serif;color:#bba995;opacity:0.2;}
+.sec_spacial .cont .txt dd h3{font-size:30px;font-weight:500;font-family:"Noto Serif", serif;}
 .sec_spacial .cont .txt dd p{padding-top:20px;line-height:1.4;font-weight:300;}
 .sec_spacial .imgmo{display:none;}
 
@@ -157,10 +157,10 @@
 /* sec 03  */
 .sec_view > .wrap{max-width:62.5%;margin:0 auto;}
 .sec_view .txt{text-align:center;}
-.sec_view .txt em{display:block;letter-spacing:5px;padding-bottom:30px;color:#d8bf82;font-weight:600;font-family:'MaruBuri', serif;}
+.sec_view .txt em{display:block;letter-spacing:5px;padding-bottom:30px;color:#d8bf82;font-weight:600;font-family:"Noto Serif", serif;}
 .sec_view .txt h3{font-size:2.55em;overflow:hidden;}
 .sec_view .txt h3 b{font-size:1em;font-weight:600;font-family:inherit;}
-.sec_view .txt h3 span{display:block;padding:5px 0;font-size:1em;font-weight:300;font-family:'MaruBuri', serif;transform:translateY(100%);transition-duration:1s;transition-property:transform;transition-delay:.1s;}
+.sec_view .txt h3 span{display:block;padding:5px 0;font-size:1em;font-weight:300;font-family:"Noto Serif", serif;transform:translateY(100%);transition-duration:1s;transition-property:transform;transition-delay:.1s;}
 .sec_view .txt h3.on span{transform:translateY(0);}
 .sec_view .cont{padding-top:60px;}
 .sec_view .cont li img{margin:0 auto;width:100%;max-width:1000px;}
@@ -185,7 +185,7 @@
 .sec_greeting .txt{text-align:center;}
 .sec_greeting .txt *{color:#fff;}
 .sec_greeting .txt h3{font-size:2.78em;overflow:hidden;}
-.sec_greeting .txt h3 span{display:block;padding:5px 0;font-size:1em;font-weight:400;font-family:'MaruBuri', serif;letter-spacing:0;transform:translateY(100%);transition-duration:1s;transition-property:transform;transition-delay:.1s;}
+.sec_greeting .txt h3 span{display:block;padding:5px 0;font-size:1em;font-weight:400;font-family:"Noto Serif", serif;letter-spacing:0;transform:translateY(100%);transition-duration:1s;transition-property:transform;transition-delay:.1s;}
 .sec_greeting .txt h3.on span{transform:translateY(0);}
 .sec_greeting .txt p{padding-top:32px;}
 .sec_greeting .txt p b{display:block;font-size:1.12em;font-weight:700;padding-bottom:14px;}
@@ -213,7 +213,7 @@
 .sec_contact .maps .hide{display:none;}
 
 .sec_contact .rsv{max-width:520px;}
-.sec_contact .rsv h3{font-size:2.78em;font-weight:400;font-family:'MaruBuri', serif;letter-spacing:0;color:#af9981;}
+.sec_contact .rsv h3{font-size:2.78em;font-weight:400;font-family:"Noto Serif", serif;letter-spacing:0;color:#af9981;}
 .sec_contact .rsv p{padding-top:26px;font-size:1.12em;font-weight:700;color:#af9981;}
 .sec_contact .rsv form{padding-top:20px;}
 .sec_contact .rsv form div input[type="text"],
