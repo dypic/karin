@@ -518,10 +518,17 @@
   }
 }
 
+/* director intro page  */
+.director-intro-bg {
+  background: url("../../assets/images/director-intro-visual.jpg") no-repeat center;
+  background-size: cover;
+}
+
 /* equipment intro page  */
 .equipment-intro-bg {
   background: url("../../assets/images/equipment-intro-visual.jpg") no-repeat center;
   background-size: cover;
 }
+
 
 
