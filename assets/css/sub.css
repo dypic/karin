@@ -523,11 +523,283 @@
   background: url("../../assets/images/director-intro-visual.jpg") no-repeat center;
   background-size: cover;
 }
+.director-intro-img > img {
+  width: 100%;
+}
+.director-intro-txt {
+  padding-left: 50px;
+}
+.director-intro-txt .position {
+  padding-left: 10px;
+}
+.director-intro-txt .record-list {
+  padding-top: 60px;
+}
+.director-intro-txt .record-list li {
+  padding-left: 25px;
+  position: relative;
+  letter-spacing: -0.8px;
+}
+.director-intro-txt .record-list li::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+@media(max-width: 1200px) {
+  .director-intro-txt {
+    padding-left: 10px;
+  }
+  .director-intro-txt .record-list {
+    padding-top: 30px;
+  }
+  .director-intro-txt .record-list li::before {
+    top: 10px;
+  }
+}
+@media(max-width: 1024px) {
+  .director-intro-img {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .director-intro-txt {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .director-intro-txt h2 .font-48 {
+    font-size: 36px;
+  }
+}
+@media(max-width: 767px) {
+  .director-intro-txt {
+    padding-left: 0;
+  }
+}
+@media(max-width: 480px) {
+  .director-intro-txt .record-list li {
+    padding-left: 15px;
+  }
+  .director-intro-txt .record-list li::before {
+    width: 4px;
+    height: 4px;
+  }
+  .director-intro-txt h2 .font-48 {
+    font-size: 28px;
+  }
+}
 
 /* equipment intro page  */
 .equipment-intro-bg {
   background: url("../../assets/images/equipment-intro-visual.jpg") no-repeat center;
   background-size: cover;
+}
+
+/* direction page  */
+.clinic-hours-bg {
+  background: url("../../assets/images/clinic-hours-visual.jpg") no-repeat center;
+  background-size: cover;
+}
+.clinic-hours-wrap {
+  background-color: #685d52;
+  padding: 100px 20px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+  color: var(--color-white);
+}
+.clinic-hours-wrap::after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  width: 200px;
+  height: 208px;
+  background: url("../../assets/images/ico-clinic-hours.png") no-repeat;
+  background-size: contain;
+}
+.clinic-hours-wrap .col-md-6 {
+  position: relative;
+}
+.clinic-hours-wrap .col-md-6:first-child::after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.clinic-hours-wrap .col-md-6 > div {
+  max-width: 360px;
+  margin: 0 auto;
+}
+.clinic-hours-wrap .clinic-hours li {
+  display: flex;
+  
+}
+.clinic-hours-wrap .clinic-hours li .fw-500 {
+  display: block;
+  max-width: 130px;
+}
+.clinic-hours-wrap .clinic-hours li span:not(.fw-bold) {
+  flex: 1;
+}
+.clinic-hours-wrap .clinic-hours p {
+  color: #f0efbd;
+  font-weight: 300;
+}
+.clinic-hours-wrap .phone-num-wrap {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+.clinic-hours-wrap .phone-num {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+.direction-sec .map-wrap {
+  padding-top: 60px;
+}
+.direction-sec .map-wrap iframe {
+  width: 100%;
+  height: 560px;
+}
+.direction-sec .direction-wrap {
+  padding-top: 60px;
+}
+.direction-sec .direction-list {
+  border: 1px solid #501111;
+  padding: 40px 20px;
+  height: 380px;
+  letter-spacing: -1px;
+}
+.direction-sec .direction-list .num-list {
+  font-size: 30px;
+  font-weight: bolder;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #937b5f;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.direction-sec .direction-list h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 15px 0 20px;
+}
+.direction-sec .direction-list .color-red {
+  color: #8d1515;
+}
+
+@media(max-width: 1024px) {
+  .clinic-hours-wrap .col-md-6 > div {
+    max-width: 300px;
+  }
+  .clinic-hours-wrap .phone-num {
+    font-size: 36px;
+  }
+  .direction-sec .direction-list .num-list {
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+  }
+  .direction-sec .direction-list h3 {
+    font-size: 26px;
+    padding: 15px 0;
+  }
+}
+@media(max-width: 800px) {
+  .direction-sec .direction-list {
+    padding: 30px 15px;
+  }
+}
+@media(max-width: 767px) {
+  .clinic-hours-wrap {
+    padding: 60px 20px;
+    margin-top: 40px;
+  }
+  .clinic-hours-wrap::after {
+    right: -80px;
+    bottom: 50px;
+    width: 250px;
+    height: 265px;
+  }
+  .clinic-hours-wrap .col-md-6:first-child::after {
+    right: initial;
+    top: initial;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 360px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .clinic-hours-wrap .clinic-hours {
+    padding-bottom: 30px;
+  }
+  .clinic-hours-wrap .phone-num-wrap {
+    padding-top: 20px;
+  }
+  .direction-sec .map-wrap, .direction-sec .direction-wrap {
+    padding-top: 40px;
+  }
+  .direction-sec .map-wrap iframe {
+    height: 360px;
+  }
+  .direction-sec .direction-list {
+    height: initial;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .direction-sec .direction-list p {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .direction-sec .direction-list .num-list {
+    font-size: 24px;
+    width: 46px;
+    height: 46px;
+  }
+  .direction-sec .direction-list h3 {
+    font-size: 24px;
+  }
+}
+@media(max-width: 480px) {
+  .clinic-hours-wrap .col-md-6 > div.clinic-hours {
+    max-width: 270px;
+  }
+  .clinic-hours-wrap .clinic-hours li .fw-500 {
+    max-width: 100px;
+  }
+  .clinic-hours-wrap .phone-num {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  .direction-sec .direction-list .num-list {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .direction-sec .direction-list h3 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
 }
 
 
