@@ -802,5 +802,66 @@
   }
 }
 
+/* reservation  */
+.reservation-bg {
+  background: url("../../assets/images/clinic-hours-visual.jpg") no-repeat center;
+  background-size: cover;
+}
+.reservation-sec {
+  background-color: #fff8f0;
+  padding: 80px 0;
+}
+.reservation-step-wrap {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.reservation-step {
+   position: relative;
+  text-align: center;
+  height: 100%;
+}
+.reservation-step img {
+  width: 95%;
+  margin: 0 auto;
+}
+.reservation-step p {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+.reservation-step-wrap > div > div:not(:first-child) > div::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  background: url("../../assets/images/ico-reservation-arrow.png") no-repeat;
+  background-size: contain;
+  left: -18px;
+  top: 38%;
+  transform: translateY(-50%);
+}
+
+@media(max-width: 600px) {
+  .reservation-step-wrap > div > div:not(:first-child) > div::before {
+    width: 10px;
+    top: 35%;
+  }
+}
+@media(max-width: 580px) {
+  .reservation-sec {
+    padding: 40px 0;
+  }
+  .reservation-step img {
+    width: 85%;
+    max-width: 180px;
+  }
+  .reservation-step-wrap > div > div:not(:first-child) > div::before {
+    top: 42%;
+  }
+  .reservation-step-wrap > div > div:nth-child(3) > div::before {
+    left: -8px;
+  }
+}
+
 
 
