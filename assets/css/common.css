@@ -200,7 +200,7 @@ input[type=radio].blind:focus-visible + label {
 
 
 /* .header  */
-.header { 
+.header-wrap { 
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -208,26 +208,34 @@ input[type=radio].blind:focus-visible + label {
     height: 120px;
     z-index: 10 ;
     padding: 40px 30px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     box-sizing: border-box;
     transition: all 0.4s;
     border-bottom: 1px solid rgba(255,255,255,0.3);
     
 }
 
-.header.scroll,
-.header:hover {
+.header-wrap.scroll,
+.header-wrap:hover {
     background: rgba(255,255,255,0.88);
     backdrop-filter: blur(10px);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 a { cursor: pointer; }
 .header h1 { 
     max-width: 190px;
     width: 100%;
-    top: 50%;
+    /* top: 50%;
     left: 40px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     z-index: 10;
 }
 .header h1 > a,
@@ -237,6 +245,7 @@ a { cursor: pointer; }
 .header h1 > a {
     width:190px;
     height:83px;
+    position: relative;
 }
 .header h1 > a > img {
     position: absolute;
@@ -249,12 +258,12 @@ a { cursor: pointer; }
 .header h1 > a > img.color {
     opacity: 0;
 }
-.header.scroll h1 > a > img.white,
-.header:hover h1 > a > img.white {
+.header-wrap.scroll h1 > a > img.white,
+.header-wrap:hover h1 > a > img.white {
     opacity: 0;
 }
-.header.scroll h1 > a > img.color,
-.header:hover h1 > a > img.color {
+.header-wrap.scroll h1 > a > img.color,
+.header-wrap:hover h1 > a > img.color {
     opacity: 1;
 }
 
@@ -303,9 +312,9 @@ a { cursor: pointer; }
 }
 
 .header nav .depth1 > li > a:hover { color: #af9981; }
-.header.scroll nav .depth1 > li > a,
-.header:hover nav .depth1 > li > a { color: #000; }
-.header:hover nav .depth1 > li > a:hover { color: #af9981; }
+.header-wrap.scroll nav .depth1 > li > a,
+.header-wrap:hover nav .depth1 > li > a { color: #000; }
+.header-wrap:hover nav .depth1 > li > a:hover { color: #af9981; }
 
 .header nav .depth1 > li.has-child { padding-right: 20px; }
 .header nav .depth1 > li.has-child:after {
@@ -335,7 +344,7 @@ a { cursor: pointer; }
 }
 .header nav .depth2 > li.menu_over a,
 .header nav .depth2 > li:hover > a { color: #33d9e1; }
-.header .login {
+/* .header .login {
     position: fixed;
     top: 0;
     right: 120px;
@@ -362,7 +371,7 @@ a { cursor: pointer; }
 }
 .header .login li:nth-child(2) a {
     background-color: rgba(255,255,255,0.2);
-}
+} */
 
 
 /* .mmnx { 
@@ -376,7 +385,10 @@ a { cursor: pointer; }
 .mmn  { 
     display: none; 
     width: 120px; height: 120px; transition: all 0.3s;
-    position: absolute; top: 0; right: 0; background: none; border: none; z-index: 100;
+    /* position: absolute; top: 0; right: 0;  */
+    background: none; border: none; z-index: 100;
+    position: relative;
+    right: -20px;
 }
 .mmn span { display: block; width: 36px; height: 2px; background-color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 0.3s; }
 .mmn span:nth-child(1) { margin-top: -11px; }
@@ -385,10 +397,10 @@ a { cursor: pointer; }
 .mmn:hover  { 
     background: #af9981;
 }
-.header.scroll .mmn span,
-.header:hover .mmn span { background-color: #000; }
-.header.scroll .mmn:hover span,
-.header:hover .mmn:hover span { background-color: #fff; }
+.header-wrap.scroll .mmn span,
+.header-wrap:hover .mmn span { background-color: #000; }
+.header-wrap.scroll .mmn:hover span,
+.header-wrap:hover .mmn:hover span { background-color: #fff; }
 
 
 .mmn.active span:nth-child(1) { margin-top: 0; transform: translate(-50%, -50%) rotate(45deg); background: #fff;}
@@ -433,16 +445,16 @@ a { cursor: pointer; }
     }
 }
 @media screen and ( max-width: 1200px ) {
-    .header { 
+    .header-wrap { 
         height: 80px;
-        padding: 30px 30px;
+        padding: 30px 25px;
     }
     .header h1 { 
         width: 112px;
         margin: 0;
-        position: absolute;
+        /* position: absolute;
         top: 50%; left: 24px;
-        transform: translateY(-50%);
+        transform: translateY(-50%); */
     }    
     .header h1 > a,
     .header h1 > a > img {
@@ -456,9 +468,9 @@ a { cursor: pointer; }
         width: 80px; height: 80px;
     }
     .mmn span { width: 30px; }
-    .header > .login {
+    /* .header > .login {
         display: none;
-    }
+    } */
     .header nav {
         display: none;
     }

@@ -34,7 +34,7 @@ $(document).ready(function() {
 }); 
 
 $( document ).ready( function() {
-    var jbOffset = $( '.header' ).offset();
+    var jbOffset = $( '.header-wrap' ).offset();
   
     $( window ).scroll( function() {
     //   if ( $( document ).scrollTop() > jbOffset.top ) {
@@ -44,10 +44,10 @@ $( document ).ready( function() {
     //     $( '.header' ).removeClass( 'scroll' );
     //   }
       if ( $( document ).scrollTop() > 0 ) {
-        $( '.header' ).addClass( 'scroll' );
+        $( '.header-wrap' ).addClass( 'scroll' );
       }
       else {
-        $( '.header' ).removeClass( 'scroll' );
+        $( '.header-wrap' ).removeClass( 'scroll' );
       }
     });
 });
